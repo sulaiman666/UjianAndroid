@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_product"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="#E6E6E6"
+    android:elevation="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/item_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="13dp"
+            tools:text="Nama Produk"/>
+        <TextView
+            android:id="@+id/item_tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_below="@id/item_tv_name"
+            android:layout_marginBottom="5dp"
+            tools:text="Harga Produk"/>
+        <TextView
+            android:id="@+id/item_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_below="@id/item_tv_price"
+            android:layout_marginBottom="5dp"
+            tools:text="Deskripsi Produk"/>
+        <TextView
+            android:id="@+id/item_tv_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_image"
+            android:layout_below="@id/item_tv_description"
+            android:layout_marginBottom="5dp"
+            tools:text="Kategori Produk"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
